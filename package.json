@@ -1,0 +1,16 @@
+{
+  "name": "homeward",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react-native": "*"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "react-native": "~0.63.4"
+  }
+}
