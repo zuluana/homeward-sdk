@@ -22,7 +22,7 @@ Pass a JSON object to the `saveToHome` function to re-direct the user to a web-b
 
 The user is then prompted with instructions for saving the link to the home screen.
 
-Currently, the saved icon design is a solid backgroud color with a single letter above (See (Roadamap)[#Roadmap] for extensibility plans).
+Currently, the saved icon design is a solid backgroud color with a single letter above (See [Roadamap](#Roadmap) for extensibility plans).
 
 ### Example
 
