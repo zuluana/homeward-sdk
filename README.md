@@ -1,12 +1,12 @@
 #  Homeland
 
->  A laughably simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow, no linking necessary =)
+**A laughably simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)**
 
 This library works by re-directing users to a web-browser where they can then save a deep link to their home screen.
 
-This is a technique used by several popular apps and documented on Stack Overflow here:  https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app
+This is a technique used by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
 
-*Please see Pitch / Anti-Pitch, Disclaimer, and License prior to using.*
+*See [Pitch / Anti-Pitch](#pitch--anti-pitch), [Disclaimer](#disclaimer), and [License](#license) prior to using.*
 
 ##  Installation
 
