@@ -11,18 +11,18 @@ This is a technique used by several popular apps and documented on Stack Overflo
 ##  Installation
 
 Npm
-`npm i --save https://github....`
+`npm i --save git@github.com:CodalReef/Homeland.git`
 
 Yarn
-`yarn add --save https://github....`
+`yarn add --save git@github.com:CodalReef/Homeland.git`
 
 ##  Usage
 
 Pass a JSON object to the `saveToHome` function to re-direct the user to a web-browser.
 
-Upon re-direction the user is prompted with instructions for saving the link to the home screen.
+The user is then prompted with instructions for saving the link to the home screen.
 
-Currently, the style of the icon is simply a single letter and a background color.  (See Roadmap for )
+Currently, the saved icon design is a solid backgroud color with a single letter above (See (Roadamap)[#Roadmap] for extensibility plans).
 
 ### Example
 
@@ -89,6 +89,7 @@ So while this library remains relevant, I'd like to focus on:
 --  Support "Plugins" to dynamically generate various icon types.
 --  Remove theh "dev" vs. "prod" distinction and inject that differentiation with a Plugin as needed.
 --  Generally, make this library "Pluggable" as I discuss here:  
+-  Publish on NPM
 
 ###  Disclaimer
 
