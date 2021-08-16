@@ -1,6 +1,6 @@
 #  Homeland
 
-**Simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)**
+> *A simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)*
 
 This library works by re-directing users to a web-browser where they can then save a deep link to their home screen.
 
