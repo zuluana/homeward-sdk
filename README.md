@@ -73,16 +73,24 @@ interface SaveToHomeParams {
 
 ## Pitch / Anti-Pitch
 
-In the future, it would be preferable to skip the browser and use native libraries instead.
+Advantages
+-  Cross-Platform
+-  Expo Compatible
+-  MIT License
 
-While such solutions *are* available now, there are several concerns which I've documeted in our Dev.to article here:  Article Link
+Disadvantages
+-  Requires Internet Connection
+-  Limited Icon Styling (See [Roadmap](#roadmap))
+-  Requires Browser Redirect
+
+While other solutions *are* available now, we ha several concerns which have been documented in our Dev.to article here:  Article Link
 
 
 ##  Roadmap
 
-It would be ideal to skip the browser altogether and use native libraries as I discuss here:  DEV LINK.
+This library helps bridge a technology-specific gap while we wait for a non-viral wrapper around Siri Shortcuts and Expo support.
 
-So while this library remains relevant, I'd like to focus on:
+Once that happens, it shouldn't be difficult to build a native solution that doesn't re-direct to a browser.  In the meantime, here are some ideas for improving this library:
 
 -  Extensibility
 --  Modularize the renderer to use a user-specified component.
