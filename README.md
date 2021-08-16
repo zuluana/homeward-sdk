@@ -82,6 +82,7 @@ Disadvantages
 -  Requires Internet Connection
 -  Limited Icon Styling (See [Roadmap](#roadmap))
 -  Requires Browser Redirect
+-  Has not yet been tested on Android
 
 While other solutions *are* available now, we ha several concerns which have been documented in our Dev.to article here:  Article Link
 
