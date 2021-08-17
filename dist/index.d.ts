@@ -1,12 +1,7 @@
 export interface SaveToHomeParams {
-    name: string;
-    description?: string;
-    letter: string;
+    manifest: any;
     link: string;
-    backgroundColor: string;
-    themeColor: string;
     payload?: any;
-    devServer?: string;
-    prodServer?: string;
+    server?: string;
 }
 export declare const saveToHome: (params: SaveToHomeParams) => void;
