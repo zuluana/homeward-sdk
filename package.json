@@ -1,5 +1,5 @@
 {
-  "name": "homeland",
+  "name": "homeward",
   "version": "0.0.1",
   "private": true,
   "main": "dist/index.js",
@@ -12,5 +12,6 @@
   },
   "devDependencies": {
     "react-native": "~0.63.4"
-  }
+  },
+  "dependencies": {}
 }

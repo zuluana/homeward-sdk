@@ -13,7 +13,7 @@ export interface SaveToHomeParams {
 }
 
 export const saveToHome = (params: SaveToHomeParams) => {
-  const { name, description, letter, link, backgroundColor, themeColor, devServer = "https://codalreef.github.io/Homeland-Server", prodServer = "https://codalreef.github.io/Homeland-Server", payload } = params;
+  const { name, description, letter, link, backgroundColor, themeColor, devServer = "https://codalreef.github.io/Homeward-Server", prodServer = "https://codalreef.github.io/Homeward-Server", payload } = params;
   const url = __DEV__ ? devServer : prodServer;
   const queryParams = `?name=${ name }&description=${ description }&letter=${ letter }&link=${ link + `?payload=${ JSON.stringify(payload) }` }&background_color=${ backgroundColor }&theme_color=${ themeColor }`
   Linking.openURL(`${ url }${ queryParams}`);

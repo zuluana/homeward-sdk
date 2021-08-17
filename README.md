@@ -1,4 +1,4 @@
-#  Homeland
+#  Homeward
 
 > *A simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)*
 
@@ -11,10 +11,10 @@ This is a technique used by several popular apps and documented on [Stack Overfl
 ##  Installation
 
 Npm
-`npm i --save git@github.com:CodalReef/Homeland.git`
+`npm i --save git@github.com:CodalReef/Homeward.git`
 
 Yarn
-`yarn add --save git@github.com:CodalReef/Homeland.git`
+`yarn add --save git@github.com:CodalReef/Homeward.git`
 
 ##  Usage
 
@@ -27,7 +27,7 @@ Currently, the saved icon design is a solid backgroud color with a single letter
 ### Example
 
 ```typescript
-import { saveToHome } from 'homeland';
+import { saveToHome } from 'homeward';
 
 saveToHome({
   name: "Calendar",
