@@ -11,10 +11,10 @@ This is a technique used by several popular apps and documented on [Stack Overfl
 ##  Installation
 
 Npm
-`npm i --save git@github.com:CodalReef/Homeward.git`
+`npm i https://github.com/CodalReef/Homeward.git`
 
 Yarn
-`yarn add --save git@github.com:CodalReef/Homeward.git`
+`yarn add https://github.com/CodalReef/Homeward.git`
 
 ##  Usage
 
@@ -99,6 +99,7 @@ Once that happens, it shouldn't be difficult to build a native solution that doe
 --  Remove theh "dev" vs. "prod" distinction and inject that differentiation with a Plugin as needed.
 --  Generally, make this library "Pluggable" as I discuss here:  
 -  Publish on NPM
+-  Save State Info (Success, Failure, etc)
 
 ###  Disclaimer
 
