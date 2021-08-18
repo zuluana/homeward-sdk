@@ -1,5 +1,5 @@
 import { Linking } from 'react-native';
-import { WebAppManifest } from 'web-app-manifest';
+import { WebAppManifest as WebAppManifestInternal } from 'web-app-manifest';
 
 export interface SaveToHomeParams {
   manifest: WebAppManifest;
@@ -18,3 +18,5 @@ export const saveToHome = (params: SaveToHomeParams) => {
   `;
   Linking.openURL(`${ server }${ queryParams}`);
 };
+
+export type WebAppManifest = WebAppManifestInternal;
