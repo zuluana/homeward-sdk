@@ -1,4 +1,4 @@
-#  Homeward
+#  Homeward SDK
 
 > *A simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)*
 
