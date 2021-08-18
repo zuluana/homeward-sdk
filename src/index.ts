@@ -9,7 +9,7 @@ export interface SaveToHomeParams {
 
 export const saveToHome = (params: SaveToHomeParams) => {
 
-  const { link, manifest, server = "https://codalreef.github.io/Homeward-Server" } = params;
+  const { link, manifest, server = "https://codalreef.github.io/Homeward-Server/link" } = params;
 
   const queryParams = `?
     manifest=${ encodeURIComponent(JSON.stringify(manifest)) }&
