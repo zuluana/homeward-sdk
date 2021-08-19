@@ -14,10 +14,12 @@ This is a technique inspired by several popular apps and documented on [Stack Ov
 
 ##  Installation
 
-Npm
+**Npm**
+
 `npm i https://github.com/CodalReef/Homeward.git`
 
-Yarn
+**Yarn**
+
 `yarn add https://github.com/CodalReef/Homeward.git`
 
 >  **NOTE**
