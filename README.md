@@ -27,9 +27,22 @@ This is a technique inspired by several popular apps and documented on [Stack Ov
 
 ##  Usage
 
+### API
 
-###  Create the Link
-Next, create the deep link you'd like saved to the user's home-screen:
+```typescript
+import { saveToHome } from 'homeward';
+
+saveToHome({
+  link:  <string>              //  The Shortcut URL
+  manifest:  <WebAppManifest>  //  Display Parameters
+  server:  <string>            //  The Homeward Web App URL (optional)
+
+  });
+```
+
+### Example
+
+First, create the deep link you'd like saved to the user's home-screen:
 
 ```typescript
 const link = "myapp://feature1.context1?payload={ ... }"
@@ -85,11 +98,7 @@ If you do not specify an icon, [a default icon is created](https://github.com/Co
 
 With the link and the manifest, we can now save the icon to the home-screen:
 
-```typescript
-import { saveToHome } from 'homeward';
 
-saveToHome({ link, manifest });
-```
 
 This immediately redirects the user to the web app with instructions on how to save the shortcut (shown above).
 
