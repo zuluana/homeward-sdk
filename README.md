@@ -2,11 +2,13 @@
 
 > *Simple Cross-Platform Shortcuts in React Native.  Works with Expo Managed (no linking necessary)*
 
-Homeward SDK re-directs users to a web app where they can save shortcuts (including Deep Links) to their home-screen.
+With this library, you can prompt your mobile users to save an arbitrary URL to their home-screen.
 
-This is a technique used by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
+You have full control over the styling of the saved shortcut through a standardized, cross-platform API.
 
->  Homeward SDK is a Typescript / Javascript wrapper around the [Homeward API](https://github.com/CodalReef/homeward).  If you prefer you can [call the API directly](https://github.com/CodalReef/homeward#api-usage).
+This is a technique inspired by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
+
+>  Homeward SDK is a Typescript / Javascript wrapper around the [Homeward API](https://github.com/CodalReef/homeward).  If you prefer you can also [call the API directly](https://github.com/CodalReef/homeward#api-usage).
 
 *See [Pitch / Anti-Pitch](https://github.com/CodalReef/homeward#pitch--anti-pitch), [Disclaimer](https://github.com/CodalReef/homeward#disclaimer) prior to use.*
 
