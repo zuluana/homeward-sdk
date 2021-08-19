@@ -6,9 +6,9 @@ Homeward SDK works by re-directing users to a web-app where they can then save s
 
 This is a technique used by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
 
->  Homeward SDK is a small TS / JS wrapper which simplifies interaction with a [Homeward Server](https://github.com/CodalReef/Homeward-Server)
+>  Homeward SDK is a Typescript / Javascript wrapper around the [Homeward API](https://github.com/CodalReef/homeward).  If you prefer you can [call the API directly](https://github.com/CodalReef/homeward#api-usage).
 
-*See [Pitch / Anti-Pitch](https://github.com/CodalReef/homeward#pitch--anti-pitch), [Disclaimer](https://github.com/CodalReef/homeward#disclaimer) prior to using.*
+*See [Pitch / Anti-Pitch](https://github.com/CodalReef/homeward#pitch--anti-pitch), [Disclaimer](https://github.com/CodalReef/homeward#disclaimer) prior to use.*
 
 ##  Installation
 
@@ -18,14 +18,20 @@ Npm
 Yarn
 `yarn add https://github.com/CodalReef/Homeward.git`
 
+>  **NOTE**
+>  We plan on publishing to npm shortly.
+
 ##  Usage
 
+
 ###  Create the Link
-Create a deep link to save to the user's home-screen:
+Next, create the deep link you'd like saved to the user's home-screen:
 
 ```typescript
 const link = "myapp://feature1.context1?payload={ ... }"
 ```
+
+The exact format of the link will depend on your application.
 
 If you're using Expo, the [expo-linking](https://docs.expo.dev/guides/linking/) library can help with this:
 
@@ -36,16 +42,16 @@ const link = Linking.makeUrl();
 
 ###  Build a Web App Manifest
 
-Homeward SDK directs the user to the Homeward web app to save the icon to their home-screen.
+The Homeland SDK directs the user to a web browser where they can save the icon to their home-screen.
 
-The style of both the icon and the web page are controlled by the supplied [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest).
+The style of both the icon and the web page are controlled by the supplied [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) JSON.
 
 Web App Manifests are an experimental web standard supported by [several major browsers](https://developer.mozilla.org/en-US/docs/Web/Manifest#browser_compatibility).
 
 Let's make a Web App Manifest to save a Calendar icon to the home-screen:
 
 ```typescript
-import { WebAppManifest } from 'homeward';
+import { WebAppManifest } from 'homeland';
 const manifest: WebAppManifest = {
     name: "Calendar",
     background_color: "#79ccd2",
@@ -81,13 +87,12 @@ import { saveToHome } from 'homeward';
 saveToHome({ link, manifest });
 ```
 
-This immediately redirects the user to the browser with instructions on how to save the shortcut:
+This immediately redirects the user to the web app with instructions on how to save the shortcut (shown above).
 
-![Example](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/anu7aab9g5bwmlnr2nl3.png)
+Once saved, the user can tap the home-screen icon to be directed to the cached Homeward PWA.  This then immediately opens the provided link, opening your native mobile app.
 
-Once saved, the user can tap the icon on the home-screen and it will open a progressive web app (PWA) dedicated to redirecting the user to the link.
+The PWA stays open in the switcher and can be tapped again to re-open the deep link.
 
-The PWA stays open in the switcher and can be tapped to re-open the deep link.
 
 ##  Custom Server
 
