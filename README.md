@@ -39,6 +39,8 @@ saveToHome({
 });
 ```
 
+WebAppManifest:  https://developer.mozilla.org/en-US/docs/Web/Manifest
+
 ### Example
 
 First, create the deep link you'd like saved to the user's home-screen:
