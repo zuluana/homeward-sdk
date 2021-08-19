@@ -2,7 +2,7 @@
 
 > *Simple Cross-Platform Shortcuts in React Native.  Works with Expo Managed (no linking necessary)*
 
-Homeward SDK works by re-directing users to a web-app where they can then save shortcuts (including Deep Links) to their home screen.
+Homeward SDK works by re-directing users to a web-app where they can save shortcuts (including Deep Links) to their home screen.
 
 This is a technique used by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
 
