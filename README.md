@@ -1,14 +1,14 @@
 #  Homeward SDK
 
-> *A simple, cross-platform library for saving deep links to your home screen.  Works with Expo Managed Workflow.  No linking necessary =)*
+> *Simple Cross-Platform Shortcuts in React Native.  Works with Expo Managed, No linking necessary =)*
 
-This library works by re-directing users to a web-browser where they can then save a deep link to their home screen.
+Homeward SDK works by re-directing users to a web-app where they can then save shortcuts (including Deep Links) to their home screen.
 
 This is a technique used by several popular apps and documented on [Stack Overflow](https://stackoverflow.com/questions/28042152/link-to-safari-add-to-home-screen-from-inside-app).
 
->  This library is a small TS / JS wrapper to simplify interaction with a [Homeward Server](https://github.com/CodalReef/Homeward-Server)
+>  Homeward SDK is a small TS / JS wrapper which simplifies interaction with a [Homeward Server](https://github.com/CodalReef/Homeward-Server)
 
-*See [Pitch / Anti-Pitch](#pitch--anti-pitch), [Disclaimer](#disclaimer), and [License](#license) prior to using.*
+*See [Pitch / Anti-Pitch](https://github.com/CodalReef/homeward#pitch--anti-pitch), [Disclaimer](https://github.com/CodalReef/homeward#disclaimer) prior to using.*
 
 ##  Installation
 
@@ -21,15 +21,13 @@ Yarn
 ##  Usage
 
 ###  Create the Link
-Next, create the deep link you'd like to save to the home-screen:
+Create a deep link to save to the user's home-screen:
 
 ```typescript
 const link = "myapp://feature1.context1?payload={ ... }"
 ```
 
-The exact format of the link will depend on the app you're linking too.
-
-If you're using Expo, the [expo-linking]() library can help with this:
+If you're using Expo, the [expo-linking](https://docs.expo.dev/guides/linking/) library can help with this:
 
 ```typescript
 import * as Linking from 'expo-linking';
@@ -38,7 +36,7 @@ const link = Linking.makeUrl();
 
 ###  Build a Web App Manifest
 
-Homeward directs the user to a web browser where they can save the icon to their home-screen.
+Homeward SDK directs the user to the Homeward web app to save the icon to their home-screen.
 
 The style of both the icon and the web page are controlled by the supplied [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest).
 
@@ -60,17 +58,18 @@ const manifest: WebAppManifest = {
 }
 ```
 
-A compatible icon is selected from the `icons` field and displayed on the home screen.
+The [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name) field will be shown below the icon on the home-screen.
 
-The [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name) field will show below the icon on the homescreen.
+The [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) field is used on Android to style the navigation bar and on iOS to style the default icon.
 
 The [background_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) field is a transitory color shown while loading the browser.
 
-The [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color) field is used on Android to style the navigation bar.
 
-If you don't supply a compatible icon, Homeward creates a default iOS icon using the `theme_color` and the first letter of the name.
+If you do not specify an icon, [a default icon is created](https://github.com/CodalReef/homeward#default-icon).
 
-At this time, we do not generate a default Android icon, and it's recommended to provide a compatible icon image.
+>  **NOTE** 
+> Android has full support for custom icons, but on iOS you [must specify a "180x180" icon](https://github.com/CodalReef/homeward#custom-icon).
+
 
 ###  Trigger Save to Home
 
@@ -88,11 +87,7 @@ This immediately redirects the user to the browser with instructions on how to s
 
 Once saved, the user can tap the icon on the home-screen and it will open a progressive web app (PWA) dedicated to redirecting the user to the link.
 
-The PWA stays open in the switcher and can be tapped to open the deep link.
-
->  **NOTE**
->  Because Homeward requests a web page from an external server, users need to be connected to the internet to save deep links.
-
+The PWA stays open in the switcher and can be tapped to re-open the deep link.
 
 ##  Custom Server
 
