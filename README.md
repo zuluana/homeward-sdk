@@ -36,8 +36,7 @@ saveToHome({
   link:  <string>              //  The Shortcut URL
   manifest:  <WebAppManifest>  //  Display Parameters
   server:  <string>            //  The Homeward Web App URL (optional)
-
-  });
+});
 ```
 
 ### Example
