@@ -111,44 +111,6 @@ const server = "https://homeward.mydomain.com";
 saveToHome({ link, manifest, server });
 ```
 
-## Pitch / Anti-Pitch
-
-Advantages
--  Cross-Platform
--  Expo Compatible
--  MIT License
-
-Disadvantages
--  Requires Internet Connection
--  Requires Browser Redirect
-
-While other solutions *are* available now, we ha several concerns which have been documented in our Dev.to article here:  Article Link
-
-
-##  Roadmap
-
-This library helps bridge a technology-specific gap while we wait for a non-viral wrapper around Siri Shortcuts and Expo support.
-
-Once that happens, it shouldn't be difficult to build a native solution that doesn't re-direct to a browser.  In the meantime, here are some ideas for improving this library:
-
--  Extensibility
---  Modularize the renderer to use a user-specified component.
---  Support "Plugins" to dynamically generate various icon types.
---  Remove theh "dev" vs. "prod" distinction and inject that differentiation with a Plugin as needed.
---  Generally, make this library "Pluggable" as I discuss here:  
--  Publish on NPM
--  Save State Info (Success, Failure, etc)
-
-###  Disclaimer
-
-The public debug end-point, currently located at https://codalreef.github.io/Homeward-Server, is for debugging purposes only.  It is provided AS IS, without warranty, subject to undocumented change, and should not be used for  production, confidential, or otherwise sensitive payloads.
-
-If you need to 
-
-###  License
-
-Both this codebase and the public debug end-point, currently located at https://codalreef.github.io/Homeward-Server, are licensed under the (MIT License)[License Link].
-
 ##  Contact
 
 Email:  codalreef@gmail.com
