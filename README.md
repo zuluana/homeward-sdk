@@ -41,6 +41,9 @@ saveToHome({
 
 WebAppManifest:  https://developer.mozilla.org/en-US/docs/Web/Manifest
 
+>  For more details see the [Homeward API Documentation](https://github.com/CodalReef/homeward).
+
+
 ### Example
 
 First, create the deep link you'd like saved to the user's home-screen:
@@ -112,7 +115,7 @@ The PWA stays open in the switcher and can be tapped again to re-open the deep l
 
 The default Homeward Server is deployed as a Github Pages application.  As noted in the disclaimer, we do not recommended this endpoint for anything but debugging with non-sensitive payloads.
 
-For production, we recommend you [deploy your own server](https://github.com/CodalReef/Homeward-Server).
+For production, we recommend you [deploy your own server](https://github.com/CodalReef/homeward).
 
 Then, when calling `saveToHome`, pass the custom server as a parameter:
 
@@ -128,6 +131,9 @@ saveToHome({ link, manifest, server });
 ##  Contact
 
 Email:  codalreef@gmail.com
+
 Reddit:  https://www.reddit.com/user/CodalReef
+
 Dev.to:  https://dev.to/codalreef
+
 Twitter:  https://twitter.com/CodalReef
